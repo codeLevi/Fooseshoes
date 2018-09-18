@@ -1,11 +1,11 @@
-.bg {
-	background-color: #242424;
+@media (min-width: 320px) {
+  nav {
+  	max-width: 90%;
+  	margin: auto;
+  }
 }
 
-ul {
-	list-style-type: none;
-}
-
-.main-nav {
-	height: 3rem;
+.nine {
+	max-width: 90%;
+	margin: auto;
 }
