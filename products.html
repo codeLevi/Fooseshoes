@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="w-100" lang="en">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,11 +14,10 @@
 		<!------------------------------- TOP ------------------------------------------->
 
 		<header class="bg-dark w-100 mx-0 text-info ">
-			<div id="wrap" class="nine justify-content-between wrap container">
+			<div class="nine d-flex justify-content-between">
 				<div class="h3 d-flex my-auto" id="fooseshoes-color"><a href="index.html">FOOSESHOES</a></div>
 				
-				<div class="container d-flex justify-content-between">
-				<div #id="searchDiv" class="nav-link dropdown ml-auto">					
+				<div class="nav-link dropdown ml-auto">					
 					<div class="btn dropdown-toggle text-secondary"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	    					<i class="fas fa-search"></i>
 	  				</div>	
@@ -121,7 +120,6 @@
 					    </div>
 					</div>
 				</div>
-				</div>
 			</div>			
 		</header>
 
@@ -155,7 +153,7 @@
 
 		<!--------------------------------------------- SLIDER ------------------------------------------------>
 
-		<div style="min-height: 150px;">
+		<div style="min-height: 50px;">
 	        <!-- Jssor Slider Begin -->	        
 	  
 	        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
@@ -237,38 +235,67 @@
 	        <!-- Jssor Slider End -->
 	    </div>
 		
-			<!-- SLIDE CONTROLLER -->
-
-		<div id="slider-nav" class="slider-tabs bg-dark ">
-			<ul class="d-flex justify-content-around text-secondary text-center p-0 m-0">	                        
-				<li><span>Pink shoes</span><p>now of $145.99</p></li>
-		        <li><span>Anns field</span><p>limited edition</p></li>
-		        <li><span>Prada</span><p>summer is coming</p></li>                        
-		    </ul>
-	    </div>
-
-	        <!------------------------------------------------- HOMEPAGE ------------------------------------------>
-	       	<div class="bg-dark">
-	       		<div class="container">
-	       			<div id="wrap" class="text-center justify-content-between">
-						<div class="main-list text-center my-50">
-							<img class="img-fluid" src="images/img1.jpg" alt=""/>
-						    <span id="center-badge" class="btn absolute-class">on sale</span>
+		<!---------------------------------------------------- PRODUCTS PAGE --------------------------------------------->
+		<div class="bg-dark">
+			<div class="d-flex justify-content-around container">
+				<div class="my-auto">
+					<div class="my-auto d-flex justify-content-between container wrap">
+						<div class="col-4 text-light">SHOP BY</div>
+						<div class="col-4">
+							<div class="dropdown">
+							  	<button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Brands
+							  	</button>
+							  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							    	<a class="dropdown-item" href="#">Action</a>
+							    	<a class="dropdown-item" href="#">Another action</a>
+							    	<a class="dropdown-item" href="#">Something else here</a>
+							  	</div>
+							</div>
 						</div>
-						<div class="main-list text-center">
-							<img class="img-fluid" src="images/img2.jpg" alt=""/>
-							<span id="center-badge" class="btn absolute-class">special offers</span>
+						<div class="col-4">
+							<div class="dropdown">
+							  	<button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Categories
+							  	</button>
+							  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							    	<a class="dropdown-item" href="#">Action</a>
+							    	<a class="dropdown-item" href="#">Another action</a>
+							    	<a class="dropdown-item" href="#">Something else here</a>
+							  	</div>
+							</div>
 						</div>
-						<div class="main-list text-center">
-							<img class="img-fluid" src="images/img3.jpg" alt=""/>
-							<span id="center-badge" class="btn absolute-class">must have</span>
+						<div class="col-4">
+							<div class="dropdown">
+							  	<button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Price
+							  	</button>
+							  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							    	<a class="dropdown-item" href="#">Action</a>
+							    	<a class="dropdown-item" href="#">Another action</a>
+							    	<a class="dropdown-item" href="#">Something else here</a>
+							  	</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
+		</div>
 
-			<!--------------------------------------- PRODUCTS ------------------------------------------>
+
+		<!-------------------------------------------------------- ALL PRODUCTS ----------------------------------------------------------->
+
+
+		<div class="container list-grid-demo">
+		    <div class="well well-sm">
+		        <strong>Display</strong>
+		        <div class="btn-group">
+		            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+		            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+		                class="glyphicon glyphicon-th"></span>Grid</a>
+
+		        </div>
+		        <!--------------------------------------- PRODUCTS ------------------------------------------>
 			
 			<div class="bg-light">
 				<div class="container">
@@ -279,7 +306,7 @@
 						</div>
 					</div>
 
-					<div id="wrap" class="text-center justify-content-between">			
+					<div class="text-center d-flex justify-content-between">			
 						<div class="shoe bg-white view overlay zoom">
 							<span id="price-badge" class="btn text-light">$145.99</span>
 							<img id="product-image" class="w-100 img-fluid" src="images/pic1.jpg" alt="Card 1">
@@ -309,7 +336,7 @@
 							<span class="hover-state my-2 border border-secondary rounded">Show all</span>
 						</div>	
 					</div>			
-					<div id="wrap" class="text-center justify-content-between">			
+					<div class="text-center d-flex justify-content-between">			
 						<div class="shoe bg-white">
 							<span id="price-badge" class="btn text-light">$145.99</span>
 							<img id="product-image" class="w-100" src="images/pic4.jpg" alt="Card 4">
@@ -334,18 +361,20 @@
 						</div>			
 					</div>
 
+		    </div>
+	
 					<hr>
 
-					<div id="bn-container" class="justify-content-between">
-						<div id="blog-news" class="bg-secondary">
+					<div id="bn-container" class="d-flex justify-content-between container">
+						<div id="blog-news" class="col-3 bg-secondary">
 							<h6>FREE SHIPPING</h6>
 							<p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel</p>
 						</div>
-						<div id="blog-news" class="bg-secondary">
+						<div id="blog-news" class="col-3 bg-secondary">
 							<h6>TESTIMONIALS</h6>
 							<p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora <br> -John Doe-</p>
 						</div>
-						<div id="blog-news" class="bg-secondary">
+						<div id="blog-news" class="col-6 bg-secondary">
 							<h6>BLOG NEWS</h6>
 							<div id="blogDiv"></div>
 
@@ -356,12 +385,12 @@
 
 			<!------------------------------------------------- FOOTER ------------------------------------------------->
 		<div class="bg-dark mb-0 text-light">
-			<div id="wrap" class="justify-content-between container">
-				<div id="blog-news" class="">
+			<div class="d-flex justify-content-between container">
+				<div class="col-4">
 					<h5>TEXT WIDGET</h5>
-					<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante </p>
+					<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 				</div>
-				<div id="blog-news" class="">
+				<div class="col-4">
 					<h5>TWITTER WIDGET</h5>
 					<div id="twitterDiv"></div>
 
@@ -369,22 +398,32 @@
 		<!-- 			<p>@ericafustero Why thank you. Your work looks awesome by the way! @treemelody <br>19 days ago</p>
 					<p>@roymarvelous You can seek a refund through TF if it is not as advertised - but it is :)<br> 21 days ago</p>	 -->	
 				</div>
-				<div id="zoompics" class="">
+				<div id="zoompics" class="col-4">
 					<h5>FLICKR WIDGET</h5>
-					<ul class="row wrap">
-						<li class="m-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic1.jpg" alt="" /> </a></li>
-						<li class="m-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic2.jpg" alt="" /> </a></li>
-						<li class="m-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic3.jpg" alt="" /> </a></li>
-						<li class="m-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic4.jpg" alt="" /> </a></li>
-						<li class="m-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic5.jpg" alt="" /> </a></li>
-						<li class="m-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic6.jpg" alt="" /> </a></li>
+					<ul class="float-left row">
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic1.jpg" alt="" /> </a></li>
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic2.jpg" alt="" /> </a></li>
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic3.jpg" alt="" /> </a></li>
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic4.jpg" alt="" /> </a></li>
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic5.jpg" alt="" /> </a></li>
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic6.jpg" alt="" /> </a></li>
 					</ul>		
 				</div>
 			</div>
 			<hr class="bg-dark m-0">
 		</div>
 
-	
+
+
+
+
+
+
+
+
+
+
+
 
 		<!-- NEWSLETTER -->
 		<div class="bg-dark">

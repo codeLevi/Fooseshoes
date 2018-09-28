@@ -125,3 +125,6 @@ function subscribe() {
     var subscribeInput = document.getElementById("subInput").value;
     console.log(subscribeInput);
 }
+
+// grid view
+

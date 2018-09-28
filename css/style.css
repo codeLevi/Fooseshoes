@@ -83,7 +83,7 @@ zoom:110%;
 }
 
 .shoe {
-	min-width: 300px;
+	min-width: 30%;
 	position: relative;
 }
 
@@ -118,10 +118,6 @@ a {
 	background-color: #57C5A0;
 }
 
-:active {
-	color: #57C5A0;
-}
-
  #center-badge {
  	background-color: rgb(0,0,0,0.5);
  	position: absolute;
@@ -133,15 +129,15 @@ a {
  #center-badge:hover {
  	color: #57C5A0;
  }
-
+/*
 #three-shoes {
 	min-height: 300px;
 	line-height: 300px;
   	white-space: nowrap;
-}
+}*/
 
 #product-image {
-	max-width: 200px;
+	max-width: 50%;
 	height: auto;
 }
 
@@ -189,4 +185,30 @@ a {
 
 #social-icon:hover {
 	color: #57C5A0;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 767px) {
+	#slider-nav {
+		display:none;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	#wrap {
+		display: flex;
+
+	}
+
+	#bn-container {
+		display:flex;
+	}
+
+	#zoompics {
+		min-width: 30%;
+	}
+
 }
