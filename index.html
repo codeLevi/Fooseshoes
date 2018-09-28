@@ -1,254 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<title>FOOSESHOES</title>
-</head>
-<body>	
-	
-	<!------------------------------- TOP ------------------------------------------->
-
-	<header class="bg-dark w-100 mx-0 text-info ">
-		<div class="nine d-flex justify-content-between">
-			<div class="h3 d-flex my-auto">FOOSESHOES</div>
-			<div class="d-flex my-auto">
-				<div class="nav-link">
-					<i class="fas fa-search"></i>	
-				</div>		
-				<div class="nav-link">LOGIN</div>
-				<div class="my-auto px-1"> or </div>
-				<div class="nav-link">REGISTER</div>
-			</div>
-		</div>	
-	</header>
-
-	<!---------------------------- NAVIGATION -------------------------------------->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,900,700,500' rel='stylesheet' type='text/css'>
+		<title>FOOSESHOES</title>
+	</head>
+	<body style="font-family: 'Maven Pro', sans-serif">	
 		
-	<nav class="navbar navbar-expand-md navbar-light bg-white flex-row pr-0">
-		<div class="row col-12 d-flex justify-content-around mx-0 border-box navbar-brand pr-0">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-				    <a class="nav-item nav-link border-left" href="#">Home</a>
-				    <a class="nav-item nav-link border-left" href="#">Products</a>
-				    <a class="nav-item nav-link border-left" href="#">About</a>
-				    <a class="nav-item nav-link border-left" href="#">Pages</a>
-				    <a class="nav-item nav-link border-left" href="#">Blog</a>
-				    <a class="nav-item nav-link border-left border-right " href="#">Contact</a>
-				</div>
-			</div>
-			<div class="nav-item nav-link border-left position-sticky">
-				<i class="far fa-star"></i>
-				<span>30</span>
-			</div>
-			<div class="nav-item nav-link border-left border-right position-sticky">
-				<i class="fab fa-opencart"></i>
-				<span>0</span>
-			</div>
-		</div>		
-	</nav>
+		<!------------------------------- TOP ------------------------------------------->
 
-	<!--------------------------------------------- SLIDER ------------------------------------------------>
-
-	<!-- SLIDE 1 -->
-
-		<div class="slider w-100">
-			<ul class="slider-list px-0">
-				<li class="main-list">
-					<img class="w-100" src="images/slider-image1.jpg" alt="slide1">
-
-					<div class="image-text">
-						<h5 class="btn bg-success">$145.99</h5>
-						<h2>pink shoes <br>	2013 collections</h2>
-						<h5>Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat</h5>
-						<h2>
-							<a href="" class="bg-white btn"><i class="far fa-eye"></i></a>
-							<a href="" class="bg-white btn"><i class="far fa-star"></i></a>
-							<a href="" class="bg-white btn"><i class="fas fa-share-square"></i></a>
-							<a href="" class="bg-white btn"><i class="fas fa-cart-arrow-down"></i></a>
-						</h2>
-
+		<header class="bg-dark w-100 mx-0 text-info ">
+			<div class="nine d-flex justify-content-between">
+				<div class="h3 d-flex my-auto" id="fooseshoes-color"><a href="#">FOOSESHOES</a></div>
+				
+				<div class="nav-link dropdown ml-auto">					
+					<div class="btn dropdown-toggle text-secondary"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    					<i class="fas fa-search"></i>
+	  				</div>	
+	  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						    <a class="dropdown-item" href="#">MEN SHOES</a>
+						    <a class="dropdown-item" href="#">KIDS </a>					    
 					</div>
-				</li>
-			</ul>
-		</div>
+				</div>	
+				
+				<div class="d-flex my-auto log_reg">	
+					<div class="nav-link btn text-secondary" data-toggle="modal" data-target="#loginModal" data-whatever="e-mail">LOGIN</div>
+					<div class="my-auto px-1 text-secondary" "> or </div>
+					<div class="nav-link btn text-secondary" data-toggle="modal" data-target="#registerModal" data-whatever="password">REGISTER</div>
+					
+					<!-- Login Modal -->
+					<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  	<div class="modal-dialog" role="document">
+					    	<div class="modal-content bg-dark">
+						      	<div class="modal-header">
+						        	<h5 class="modal-title" id="exampleModalLabel">Login</h5>
+						        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          		<span aria-hidden="true">&times;</span>
+						        	</button>
+						      	</div>
+						      	<div class="modal-body">
+						        	<form>
+									  	<div class="form-group">
+									    	<label for="exampleInputEmail1">Email address</label>
+									    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+									    	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									  	</div>
+									  	<div class="form-group">
+									    	<label for="exampleInputPassword1">Password</label>
+									    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									  	</div>
+									  	<div class="form-check">
+									    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									    	<label class="form-check-label" for="exampleCheck1">Keep me logged in!</label>
+									  	</div>
+									  	 <div style="margin-top:10px" class="form-group">
+	                                    <!-- Button -->
 
-		<!-- SLIDE 2 -->
+	                                    <div class="col-sm-12 controls">
+	                                   <!--    <a id="btn-login" href="#" class="btn btn-success">Login  </a> -->
+	                                      <input type="submit" value="Login" class="btn btn-success">
+	                                      <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
 
-		<div class="slider w-100">
-			<ul class="slider-list px-0">
-				<li class="main-list">
-					<img class="w-100" src="images/slider-image2.jpg" alt="slide1">
-
-					<div class="image-text">
-						<h5 class="btn bg-success">$75.99</h5>
-						<h2>Anna Field <br>	2015 collections</h2>
-						<h5>Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat</h5>
-						<h2>
-							<a href="" class="bg-white btn"><i class="far fa-eye"></i></a>
-							<a href="" class="bg-white btn"><i class="far fa-star"></i></a>
-							<a href="" class="bg-white btn"><i class="fas fa-share-square"></i></a>
-							<a href="" class="bg-white btn"><i class="fas fa-cart-arrow-down"></i></a>
-						</h2>
-
+	                                    </div>
+	                                </div>
+									</form>
+						      	</div>					      	
+					    	</div>
+					  	</div>
 					</div>
-				</li>
-			</ul>
-		</div>
 
-		<!-- SLIDE 3 -->
-
-		<div class="slider w-100">
-			<ul class="slider-list px-0">
-				<li class="main-list">
-					<img class="w-100" src="images/slider-image3.jpg" alt="slide1">
-
-					<div class="image-text">
-						<h5 class="btn bg-success">$276.99</h5>
-						<h2>Prada <br>	2016 collections</h2>
-						<h5>Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat</h5>
-						<h2>
-							<a href="" class="bg-white btn"><i class="far fa-eye"></i></a>
-							<a href="" class="bg-white btn"><i class="far fa-star"></i></a>
-							<a href="" class="bg-white btn"><i class="fas fa-share-square"></i></a>
-							<a href="" class="bg-white btn"><i class="fas fa-cart-arrow-down"></i></a>
-						</h2>
-
+					<!-- Register Modal -->
+					<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  	<div class="modal-dialog" role="document">
+					    	<div class="modal-content bg-dark">
+						      	<div class="modal-header">
+						        	<h5 class="modal-title" id="exampleModalLabel">Register</h5>
+						        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          		<span aria-hidden="true">&times;</span>
+						        	</button>
+						      	</div>
+						      	<div class="modal-body">
+						        	<form role="form">
+						    			<div class="row">
+						    				<div class="col-xs-6 col-sm-6 col-md-6">
+						    					<div class="form-group">
+						                			<input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+						    					</div>
+						    				</div>
+						    				<div class="col-xs-6 col-sm-6 col-md-6">
+						    					<div class="form-group">
+						    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+						    					</div>
+						    				</div>
+						    			</div>
+						    			<div class="form-group">
+						    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+						    			</div>
+						    			<div class="row">
+						    				<div class="col-xs-6 col-sm-6 col-md-6">
+						    					<div class="form-group">
+						    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+						    					</div>
+						    				</div>
+						    				<div class="col-xs-6 col-sm-6 col-md-6">
+						    					<div class="form-group">
+						    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
+						    					</div>
+						    				</div>
+						    			</div>					    			
+						    			<input type="submit" value="Register" class="btn btn-success btn-block">
+						    			<a id="btn-fblogin" href="#" class="btn btn-primary btn-block">Register with Facebook</a>
+				    				</form>
+	                            </div>								
+						    </div>					      	
+					    </div>
 					</div>
-				</li>
-			</ul>
-		</div>
-
-		<!-- SLIDE CONTROLLER -->
-
-		<div class="slider-tabs bg-secondary">
-			<ul class="d-flex justify-content-around text-light text-center p-0 m-0">	                        
-					<li><span>pink shoes</span><p>now of $145.99</p></a></li>
-	                <li><span>anns field</span><p>limited edition</p></li>
-	                <li><span>prada</span><p>summer is coming</p></li>                        
-	        </ul>
-        </div>
-
-        <!------------------------------------------------- HOMEPAGE ------------------------------------------>
-
-		<div class="d-flex justify-content-between bg-dark">
-			<div class="d-flex justify-content-around container">
-				<div class="main-list">
-					<img src="images/img1.jpg" alt=""/>
-				    <span class="btn absolute-class bg-dark">on sale</span>
-				</div>
-				<div class="main-list">
-					<img src="images/img2.jpg" alt=""/>
-					<span class="btn absolute-class bg-dark">special offers</span>
-				</div>
-				<div class="main-list">
-					<img src="images/img3.jpg" alt=""/>
-					<span class="btn absolute-class bg-dark">must have</span>
 				</div>
 			</div>			
-		</div>
+		</header>
 
+		<!---------------------------- NAVIGATION -------------------------------------->
+			
+		<nav class="navbar navbar-expand-md navbar-light bg-white flex-row p-0 text-secondary">
+			<div class="row col-12 d-flex justify-content-around mx-0 border-box navbar-brand pr-0 py-0">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+					    <a class="nav-item nav-link border-left" href="#">Home</a>
+					    <a class="nav-item nav-link border-left" href="#">Products</a>
+					    <a class="nav-item nav-link border-left" href="#">About</a>
+					    <a class="nav-item nav-link border-left" href="#">Pages</a>
+					    <a class="nav-item nav-link border-left" href="#">Blog</a>
+					    <a class="nav-item nav-link border-left border-right " href="#">Contact</a>
+					</div>
+				</div>
+				<div class="nav-item nav-link border-left position-sticky text-secondary">
+					<i class="far fa-star"></i>
+					<span>30</span>
+				</div>
+				<div class="nav-item nav-link border-left border-right position-sticky text-secondary">
+					<i class="fab fa-opencart"></i>
+					<span class="hover-state rounded">0</span>
+				</div>
+			</div>		
+		</nav>
+
+		<!--------------------------------------------- SLIDER ------------------------------------------------>
+
+		<div style="min-height: 50px;">
+	        <!-- Jssor Slider Begin -->	        
+	  
+	        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
+	        top: 0px; left: 0px; width: 1300px; height: 410px; overflow: hidden;">
+	            <!-- Loading Screen -->
+	            <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+	                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+	            </div>
+
+	            <!-- Slides Container -->
+	            <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 410px; overflow: hidden;">
+	               
+	               <!-- SLIDE 1 -->
+
+	                <div class="slider w-100">
+						<ul class="slider-list px-0">
+							<li class="main-list">
+								<img data-u="image" class="w-100 mySlides" src="images/slider-image1.jpg" alt="slide1">
+
+								<div class="image-text">
+									<h5 class="btn" id="fooseshoes-bg">$145.99</h5>
+									<h2>Pink shoes <br>	2013 collections</h2>
+									<h5>Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat</h5>
+									<h2>
+										<a href="" class="bg-white btn hover-state"><i class="far fa-eye"></i></a>
+										<a href="" class="bg-white btn hover-state"><i class="far fa-star"></i></a>
+										<a href="" class="bg-white btn hover-state"><i class="fas fa-share-square"></i></a>
+										<a href="" class="bg-white btn hover-state"><i class="fas fa-cart-arrow-down"></i></a>
+									</h2>
+								</div>
+							</li>
+						</ul>
+					</div>
+	               
+	               <!-- SLIDE 2 -->
+
+	                <div class="slider w-100">
+						<ul class="slider-list px-0">
+							<li class="main-list">
+								<img data-u="image" class="w-100 mySlides" src="images/slider-image2.jpg" alt="slide1">
+
+								<div class="image-text">
+									<h5 class="btn" id="fooseshoes-bg">$75.99</h5>
+									<h2>Anna Field <br>	2015 collections</h2>
+									<h5>Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat</h5>
+									<h2>
+										<a href="" class="bg-white btn hover-state"><i class="far fa-eye"></i></a>
+										<a href="" class="bg-white btn hover-state"><i class="far fa-star"></i></a>
+										<a href="" class="bg-white btn hover-state"><i class="fas fa-share-square"></i></a>
+										<a href="" class="bg-white btn hover-state"><i class="fas fa-cart-arrow-down"></i></a>
+									</h2>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- SLIDE 3 -->
+
+	                <div class="slider w-100">
+						<ul class="slider-list px-0">
+							<li class="main-list">
+								<img data-u="image" class="w-100 mySlides" src="images/slider-image3.jpg" alt="slide1">
+								<div class="image-text">
+									<h5 class="btn" id="fooseshoes-bg">$276.99</h5>
+									<h2>Prada <br>	2016 collections</h2>
+									<h5>Nunc non fermentum nunc. Sed ut ante <br> eget leo tempor consequat</h5>
+									<h2>
+										<a href="" class="bg-white btn hover-state"><i class="far fa-eye"></i></a>
+										<a href="" class="bg-white btn hover-state"><i class="far fa-star"></i></a>
+										<a href="" class="bg-white btn hover-state"><i class="fas fa-share-square"></i></a>
+										<a href="" class="bg-white btn hover-state"><i class="fas fa-cart-arrow-down"></i></a>
+									</h2>
+								</div>
+							</li>
+						</ul>
+					</div>
+	            </div>  
+	        </div>
+	        <!-- Jssor Slider End -->
+	    </div>
 		
-		<div class="bg-secondary">
-			<div class="container">
+			<!-- SLIDE CONTROLLER -->
 
-			<h3>New Arrivals on FooseShoes</h3>
-			<div class="text-center d-flex justify-content-between">			
-				<div>
-					<img src="images/pic1.jpg" alt="Card 1">
-					<div>
-					    <h5>Even & Odd</h5>
+		<div class="slider-tabs bg-dark ">
+			<ul class="d-flex justify-content-around text-secondary text-center p-0 m-0">	                        
+				<li><span>Pink shoes</span><p>now of $145.99</p></li>
+		        <li><span>Anns field</span><p>limited edition</p></li>
+		        <li><span>Prada</span><p>summer is coming</p></li>                        
+		    </ul>
+	    </div>
+
+	        <!------------------------------------------------- HOMEPAGE ------------------------------------------>
+
+			<div class="d-flex justify-content-between bg-secondary">
+				<div id="three-shoes" class="d-flex justify-content-around container">
+					<div class="main-list text-center my-50">
+						<img src="images/img1.jpg" alt=""/>
+					    <span id="center-badge" class="btn absolute-class">on sale</span>
 					</div>
-				</div>
-				<div>
-					<img src="images/pic2.jpg" alt="Card 2">
-					<div>
-					    <h5>Even & Odd</h5>
+					<div class="main-list text-center">
+						<img src="images/img2.jpg" alt=""/>
+						<span id="center-badge" class="btn absolute-class">special offers</span>
 					</div>
-				</div>
-				<div>
-					<img src="images/pic3.jpg" alt="Card 3">
-					<div>
-					   	<h5>Buffalo Decoletté</h5>				    
+					<div class="main-list text-center">
+						<img src="images/img3.jpg" alt=""/>
+						<span id="center-badge" class="btn absolute-class">must have</span>
 					</div>
 				</div>			
 			</div>
 
-			<h3>Best Sellers of the Month</h3>
-			<div class="text-center d-flex justify-content-between">			
-				<div>
-					<img src="images/pic4.jpg" alt="Card 1">
-					<div>
-					    <h5>Even & Odd</h5>
+			<!--------------------------------------- PRODUCTS ------------------------------------------>
+			
+			<div class="bg-light">
+				<div class="container">
+					<div id="main-heading">
+						<div class="d-flex justify-content-between">
+							<h3 class="text-secondary">New Arrivals on FooseShoes</h3>
+							<span class="hover-state my-2 border border-secondary rounded">Show all</span>
+						</div>
+					</div>
+
+					<div class="text-center d-flex justify-content-between">			
+						<div class="shoe bg-white view overlay zoom">
+							<span id="price-badge" class="btn text-light">$145.99</span>
+							<img id="product-image" class="w-100 img-fluid" src="images/pic1.jpg" alt="Card 1">
+							<div class="bg-white border-top mask flex-center">
+							    <h5 class="white-text">Even & Odd</h5>
+							</div>														
+						</div>
+						<div class="shoe bg-white">
+							<span id="price-badge" class="btn text-light">$145.99</span>
+							<img id="product-image" class="w-100" src="images/pic2.jpg" alt="Card 2">
+							<div class="bg-white border-top">
+							    <h5>Even & Odd</h5>
+							</div>
+							<span id="onSale-badge"class="btn bg-dark text-light">ON SALE!</span>
+						</div>
+						<div class="shoe bg-white">
+							<span id="price-badge" class="btn text-light">$145.99</span>
+							<img id="product-image" class="w-100" src="images/pic3.jpg" alt="Card 3">
+							<div class="bg-white border-top">
+							   	<h5>Buffalo Decoletté</h5>				    
+							</div>
+						</div>			
+					</div>
+					<div id="main-heading">
+						<div class="d-flex justify-content-between">
+							<h3 class="text-secondary">Best Sellers of the Month</h3>
+							<span class="hover-state my-2 border border-secondary rounded">Show all</span>
+						</div>	
+					</div>			
+					<div class="text-center d-flex justify-content-between">			
+						<div class="shoe bg-white">
+							<span id="price-badge" class="btn text-light">$145.99</span>
+							<img id="product-image" class="w-100" src="images/pic4.jpg" alt="Card 4">
+							<div class="bg-white border-top">
+							    <h5>Even & Odd</h5>
+							</div>
+						</div>
+						<div class="shoe bg-white">
+							<span id="price-badge" class="btn text-light">$145.99</span>
+							<img id="product-image" class="w-100" src="images/pic5.jpg" alt="Card 5">
+							<div class="bg-white border-top">
+							    <h5>Even & Odd</h5>
+							</div>
+						</div>
+						<div class="shoe bg-white">
+							<span id="price-badge" class="btn text-light">$145.99</span>
+							<img id="product-image" class="w-100" src="images/pic6.jpg" alt="Card 6">
+							<div class="bg-white border-top">
+							   	<h5>Buffalo Decoletté</h5>				    
+							</div>
+							<span id="onSale-badge"class="btn bg-warning text-light">Out of <br> stock!</span>
+						</div>			
+					</div>
+
+					<hr>
+
+					<div id="bn-container" class="d-flex justify-content-between container">
+						<div id="blog-news" class="col-3 bg-secondary">
+							<h6>FREE SHIPPING</h6>
+							<p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel</p>
+						</div>
+						<div id="blog-news" class="col-3 bg-secondary">
+							<h6>TESTIMONIALS</h6>
+							<p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora <br> -John Doe-</p>
+						</div>
+						<div id="blog-news" class="col-6 bg-secondary">
+							<h6>BLOG NEWS</h6>
+							<div id="blogDiv"></div>
+
+						</div>
 					</div>
 				</div>
-				<div>
-					<img src="images/pic5.jpg" alt="Card 2">
-					<div>
-					    <h5>Even & Odd</h5>
-					</div>
+			</div>	
+
+			<!------------------------------------------------- FOOTER ------------------------------------------------->
+		<div class="bg-dark mb-0 text-light">
+			<div class="d-flex justify-content-between container">
+				<div class="col-4">
+					<h5>TEXT WIDGET</h5>
+					<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 				</div>
-				<div>
-					<img src="images/pic6.jpg" alt="Card 3">
-					<div>
-					   	<h5>Buffalo Decoletté</h5>				    
-					</div>
-				</div>			
+				<div class="col-4">
+					<h5>TWITTER WIDGET</h5>
+					<div id="twitterDiv"></div>
+
+
+		<!-- 			<p>@ericafustero Why thank you. Your work looks awesome by the way! @treemelody <br>19 days ago</p>
+					<p>@roymarvelous You can seek a refund through TF if it is not as advertised - but it is :)<br> 21 days ago</p>	 -->	
+				</div>
+				<div id="zoompics" class="col-4">
+					<h5>FLICKR WIDGET</h5>
+					<ul class="float-left row">
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic1.jpg" alt="" /> </a></li>
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic2.jpg" alt="" /> </a></li>
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic3.jpg" alt="" /> </a></li>
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic4.jpg" alt="" /> </a></li>
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic5.jpg" alt="" /> </a></li>
+						<li class="col-4 my-2"><a href="#"><img data-enlargable style="cursor: zoom-in" src="images/f_pic6.jpg" alt="" /> </a></li>
+					</ul>		
+				</div>
 			</div>
-
-			<hr>
-
-			<div class="d-flex justify-content-between">
-				<div class="col-3">
-					<h6>FREE SHIPPING</h6>
-					<p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel</p>
-				</div>
-				<div class="col-3">
-					<h6>TESTIMONIALS</h6>
-					<p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora <br> -John Doe-</p>
-				</div>
-				<div class="col-6">
-
-					<h6>BLOG NEWS</h6>
-
-					<div class="container d-flex justify-content-around">
-						<span class="btn col-2">Apr<br>01</span>
-						<div><strong>Nice & clean. The best for you blog!</strong><br>
-Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel </div>
-					</div>
-
-					<div class="container d-flex justify-content-around">
-						<span class="btn col-2">Apr<br>01</span>
-						<div><strong>NANDO PAPPALARDO</strong><br>
-Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh.</div>
-					</div>
-				</div>
-			</div>
+			<hr class="bg-dark m-0">
 		</div>
-		</div>	
-
-		<!------------------------------------------------- FOOTER ------------------------------------------------->
-
-
-
-
-		
 
 	
 
+		<!-- NEWSLETTER -->
+		<div class="bg-dark">
+			<div class="d-flex justify-content-between container">
+				<div class="my-auto">
+					<form id="form" class="my-auto d-flex justify-content-between container">
+						<input id="subInput" type="email" class="form-control" value="" placeholder="Enter email for newsletter" />
+						<input class="bg-dark" type="submit" value="Subscribe" onclick="subscribe();" />
+					</form>
+				</div>
+				<div class="float-left row wrap col-4 justify-content-end">	
+					<i id="social-icon" class="fab fa-facebook"></i>
+					<i id="social-icon" class="fab fa-twitter-square"></i>
+					<i id="social-icon" class="fab fa-google-plus-square"></i>
+					<i id="social-icon" class="fab fa-linkedin"></i>
+					<i id="social-icon" class="fab fa-flickr"></i>	
+				</div>
+			</div>
+		</div>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
-	<script type="text/javascript" src="script/script.js"></script>
 
-</body>
+		
+		<script type="text/javascript" src="script/jssor.slider.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
+		<script type="text/javascript" src="script/script.js"></script>
+		<script src="src/skdslider.js"></script>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	</body>
 </html>
